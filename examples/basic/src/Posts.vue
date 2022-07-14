@@ -20,7 +20,7 @@ export default defineComponent({
   emits: ["setPostId"],
   setup() {
     const { isLoading, isError, isFetching, data, error, refetch } = useQuery(
-      "posts",
+      ["posts"],
       fetcher
     );
 
